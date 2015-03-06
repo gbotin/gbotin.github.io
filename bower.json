@@ -1,0 +1,20 @@
+{
+  "name": "gbotin.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gbotin/gbotin.github.io",
+  "authors": [
+    "gbotin <geoffrey.botin@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2"
+  }
+}
