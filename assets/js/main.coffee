@@ -10,7 +10,7 @@ $ ->
     e.preventDefault()
     $popovers.not(this).popover('hide')
 
-  $('body').on 'click', (e) ->
+  $(document).on 'click', (e) ->
     $popovers.each ->
       if (!$(this).is(e.target) && $(this).has(e.target).length is 0 && $('.popover').has(e.target).length is 0)
         $(this).popover('hide')
