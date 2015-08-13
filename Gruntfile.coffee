@@ -37,6 +37,14 @@ module.exports = (grunt) ->
           dest: "assets/vendor/"
         }]
 
+      zeroclipboard:
+        files: [{
+          expand: true
+          cwd: "bower_components/zeroclipboard/dist/"
+          src: ["ZeroClipboard.min.js", "ZeroClipboard.min.map", "ZeroClipboard.swf"]
+          dest: "assets/vendor/js"
+        }]
+
     exec:
       jekyll:
         cmd: "jekyll build --trace"
@@ -51,6 +59,7 @@ module.exports = (grunt) ->
           "_layouts/**/*"
           "_posts/**/*"
           "_sass/**/*"
+          "assets/**/*"
           "css/**/*"
           "js/**/*"
           "_config.yml"

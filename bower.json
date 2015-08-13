@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.2",
-    "components-font-awesome": "4.4.0"
+    "components-font-awesome": "4.4.0",
+    "zeroclipboard": "2.2.0"
   }
 }

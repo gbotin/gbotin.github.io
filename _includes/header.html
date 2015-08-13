@@ -3,16 +3,46 @@
     <div class="row">
       <div class="col-md-offset-2 col-md-8">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="{{ site.baseurl }}">
             Geoffrey Botin
           </a>
         </div>
 
         <div class="pull-right">
           <ul class="social list-inline">
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-github"></i></a></li>
+
+            <li><a target="_blank" href="https://www.linkedin.com/in/{{site.linkedin_username}}">
+              <i class="fa fa-linkedin"></i>
+            </a></li>
+
+            <li><a target="_blank" href="https://twitter.com/{{site.twitter_username}}">
+              <i class="fa fa-twitter"></i>
+            </a></li>
+
+            <li><a target="_blank" href="https://github.com/{{site.github_username}}">
+              <i class="fa fa-github"></i>
+            </a></li>
+
+            <li><a href="skype:{{site.skype_username}}?call">
+              <i class="fa fa-skype"></i>
+            </a></li>
+
+            <li><a href="#"
+              data-toggle="popover"
+              data-html="true"
+              data-placement="bottom"
+              data-content="{{site.email}} <span class='clip-wrap'><a class='copy' data-clipboard-text='{{site.email}}' href='#'><i class='fa fa-clipboard'></i></a></span>">
+              <i class="fa fa-envelope"></i>
+            </a></li>
+
+            <li><a href="#"
+              data-toggle="popover"
+              data-html="true"
+              data-placement="bottom"
+              data-content="{{site.phone}} <span class='clip-wrap'><a class='copy' data-clipboard-text='{{site.phone}}' href='#'><i class='fa fa-clipboard'></i></a></span>">
+              <i class="fa fa-phone"></i>
+            </a></li>
+
           </ul>
         </div>
       </div>
