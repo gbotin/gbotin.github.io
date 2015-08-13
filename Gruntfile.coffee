@@ -18,7 +18,7 @@ module.exports = (grunt) ->
           expand: true
           cwd: "bower_components/jquery/dist/"
           src: ["jquery.min.js", "jquery.min.map"]
-          dest: "vendor/js"
+          dest: "assets/vendor/js"
         }]
 
       bootstrap:
@@ -26,7 +26,7 @@ module.exports = (grunt) ->
           expand: true
           cwd: "bower_components/bootstrap/dist/"
           src: ["css/bootstrap.min.css", "css/bootstrap.css.map", "fonts/*", "js/bootstrap.min.js"]
-          dest: "vendor/"
+          dest: "assets/vendor/"
         }]
 
       fontawesome:
@@ -34,7 +34,7 @@ module.exports = (grunt) ->
           expand: true
           cwd: "bower_components/components-font-awesome/"
           src: ["css/font-awesome.min.css", "fonts/*"]
-          dest: "vendor/"
+          dest: "assets/vendor/"
         }]
 
     exec:

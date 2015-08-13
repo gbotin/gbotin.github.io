@@ -21,7 +21,7 @@ host: localhost
 
 sass:
   sass_dir: _sass
-  style: :compressed
+  # style: :compressed
 
 exclude:
   - "bower_components"

@@ -1,5 +1,7 @@
-_site
 .sass-cache
-/node_modules/
-/bower_components/
-/vendor/
+
+_site
+
+node_modules/
+bower_components/
+assets/vendor/
