@@ -21,6 +21,9 @@ $ ->
 
     $copy = $('.popover .copy')
 
+    $copy.on 'click', (e) ->
+      e.preventDefault()
+
     $copy.tooltip
       title: 'Copy to clipboard'
       placement: 'bottom'
