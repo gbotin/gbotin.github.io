@@ -5,7 +5,6 @@
   margin-bottom: 0
 
   .navbar-header
-    float: left
     padding: 15px
     text-align: center
     width: 100%
@@ -25,8 +24,8 @@
       margin-right: -10px
       padding: 15px 0
 
-      font-size: 26px
-      line-height: 20px
+      font-size: 22px
+      line-height: 22px
       text-align: center
 
       li
@@ -59,3 +58,22 @@
 
       &:active, &:focus
         outline: none
+
+  @media (min-width: $screen-sm-min)
+    .navbar-header
+      width: auto
+
+    .social
+      width: auto
+      float: right
+
+      ul
+        font-size: 18px
+        line-height: 20px
+        margin: 0
+
+    .popover
+      font-size: 14px
+
+      .popover-content
+        padding: 5px 10px
