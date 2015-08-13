@@ -12,31 +12,29 @@ module.exports = (grunt) ->
   grunt.initConfig
 
     copy:
+
       jquery:
         files: [{
           expand: true
           cwd: "bower_components/jquery/dist/"
-          src: "jquery.min.js"
-          dest: "vendor/js/"
-        },
-        {
-          expand: true
-          cwd: "bower_components/jquery/dist/"
-          src: "jquery.min.map"
-          dest: "vendor/js/"
+          src: ["jquery.min.js", "jquery.min.map"]
+          dest: "vendor/js"
         }]
+
       bootstrap:
         files: [{
           expand: true
-          cwd: "bower_components/bootstrap/dist/css/"
-          src: "bootstrap.min.css"
-          dest: "vendor/css/"
-        },
-        {
+          cwd: "bower_components/bootstrap/dist/"
+          src: ["css/bootstrap.min.css", "css/bootstrap.css.map", "fonts/*", "js/bootstrap.min.js"]
+          dest: "vendor/"
+        }]
+
+      fontawesome:
+        files: [{
           expand: true
-          cwd: "bower_components/bootstrap/dist/js/"
-          src: "bootstrap.min.js"
-          dest: "vendor/js/"
+          cwd: "bower_components/components-font-awesome/"
+          src: ["css/font-awesome.min.css", "fonts/*"]
+          dest: "vendor/"
         }]
 
     exec:
@@ -52,6 +50,7 @@ module.exports = (grunt) ->
           "_includes/**/*"
           "_layouts/**/*"
           "_posts/**/*"
+          "_sass/**/*"
           "css/**/*"
           "js/**/*"
           "_config.yml"
@@ -71,15 +70,15 @@ module.exports = (grunt) ->
 
   grunt.registerTask "build", [
     "copy"
-    "exec:jekyll"
   ]
 
   grunt.registerTask "serve", [
     "build"
+    "exec:jekyll:serve"
     "connect:server"
     "watch"
   ]
 
   grunt.registerTask "default", [
-    "serve"
+    "exec:jekyll:serve"
   ]

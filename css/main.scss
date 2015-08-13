@@ -3,3 +3,16 @@
 ---
 
 @charset "utf-8";
+
+$white: #FFF;
+$text-color: #333;
+$text-color-light: #888;
+$shadow-color: #CCC;
+
+@import "fontfaces";
+@import "header";
+
+body{
+  font-family: 'OpenSansRegular';
+  color: $text-color;
+}
