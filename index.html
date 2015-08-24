@@ -9,12 +9,12 @@ layout: default
   </div>
 </section>
 
-<section id="main">
+<section id="main" class="container">
   <section id="intro">
 
     <div class="container">
 
-      <div class="">
+      <div class="row">
 
         <h1><i class="fa fa-angle-right"></i>About me</h1>
 
@@ -37,11 +37,34 @@ layout: default
 
     <div class="container">
 
-      <div>
+      <div class="row">
 
         <h1><i class="fa fa-angle-right"></i>Abilities</h1>
 
+        {% for category in site.data.abilities %}
+          <div>
+            <h2>{{category.name}}</h2>
+            <ul class="abilities-list list-unstyled container">
+              {% for ability in category.abilities %}
+                <li class="ability-item row">
+                  <ul class="list-inline">
+                    <li class="col-xs-3"><img src="/assets/img/{{ability.img}}.png"/></li>
+                    <li class="col-xs-3">{{ability.name}}</li>
+                    <li class="col-xs-6">
+                      <div class="progress">
+                        <div class="progress-bar" style="width: {{ability.progress}}%"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
 
+        <div class="col-xs-6 col-xs-offset-3">
+          <hr/>
+        </div>
 
       </div>
 

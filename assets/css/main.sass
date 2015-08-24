@@ -25,6 +25,12 @@ $screen-lg-min: 1200px
 @import header
 @import hero
 @import intro
+@import abilities
+
+// 1.15em
+// 1.25em
+// 1.45em
+// 1.55em
 
 body
   font-size: 14px
@@ -35,15 +41,19 @@ h1
   color: $text-color
   text-transform: uppercase
   font-family: RalewayLight
-  font-size: 20px
+  font-size: 1.25em
+  margin-top: 30px
+  margin-bottom: 35px
 
-#main
+h2
+  color: $text-color
+  text-transform: uppercase
+  font-family: RalewayLight
+  font-size: 1em
 
-  margin: 15px
+h1, h2, h3
+  i
+    margin-right: 10px
 
-  h1
-    font-size: 16px
-    margin-bottom: 25px
-
-    i
-      margin-right: 10px
+  & ~ hr
+    margin: 10px 0

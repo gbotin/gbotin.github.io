@@ -54,10 +54,9 @@ module.exports = (grunt) ->
         livereload: true
       source:
         files: [
-          "_drafts/**/*"
           "_includes/**/*"
+          "_data/**/*"
           "_layouts/**/*"
-          "_posts/**/*"
           "_sass/**/*"
           "assets/**/*"
           "css/**/*"
