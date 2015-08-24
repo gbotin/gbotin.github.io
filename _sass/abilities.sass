@@ -3,14 +3,14 @@
   h2
     text-align: center
 
-  .abilities-list
-
   .ability-item
+    clear: both
 
     ul > li
       height: 50px
       line-height: 50px
       margin-bottom: 10px
+      // text-align: center
 
     img
       height: 100%
@@ -24,3 +24,12 @@
       .progress-bar
         box-shadow: none
         border-radius: 0
+
+  @media (min-width: $screen-md-min)
+
+    .abilities-category
+
+      border-right: solid 1px $border-color
+
+      &:last-child
+        border: none

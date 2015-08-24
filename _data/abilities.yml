@@ -1,5 +1,5 @@
 - name: Front-End
-- abilities:
+  abilities:
   - name: Bower
     img: bower
     progress: 40
@@ -25,7 +25,7 @@
     progress: 40
 
 - name: Back-End
-- abilities:
+  abilities:
   - name: Bower
     img: bower
     progress: 40
@@ -51,7 +51,7 @@
     progress: 40
 
 - name: Ops
-- abilities:
+  abilities:
   - name: Bower
     img: bower
     progress: 40

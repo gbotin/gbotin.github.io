@@ -10,65 +10,72 @@ layout: default
 </section>
 
 <section id="main" class="container">
-  <section id="intro">
 
-    <div class="container">
+  <div class="row">
 
-      <div class="row">
+    <div class="col-md-offset-1 col-md-10 col-sm-12">
 
-        <h1><i class="fa fa-angle-right"></i>About me</h1>
+      <section id="intro">
 
-        <p>Passionate about new technologies, I had several times the opportunity to work in the world of startups, mostly at Euratechnologies, Lille.</p>
-        <p>I have focused my specialization on development with Ruby on Rails framework which I use since 4 years.</p>
-        <p>More recently, I had the opportunity to gain experience on the server aspect of my job (Docker, Capistrano, Nginx), and tries to gain skills with front frameworks such as Angular, Backbone, Polymer and Meteor.</p>
-        <p>Eager for new experiences and willing to value my skills, I'll now offer my services as a freelance to help you with your projects.</p>
+        <div class="row">
+          <div class="col-xs-12">
+            <h1><i class="fa fa-angle-right"></i>About me</h1>
 
-      </div>
-
-      <div class="col-xs-6 col-xs-offset-3">
-        <hr/>
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="abilities">
-
-    <div class="container">
-
-      <div class="row">
-
-        <h1><i class="fa fa-angle-right"></i>Abilities</h1>
-
-        {% for category in site.data.abilities %}
-          <div>
-            <h2>{{category.name}}</h2>
-            <ul class="abilities-list list-unstyled container">
-              {% for ability in category.abilities %}
-                <li class="ability-item row">
-                  <ul class="list-inline">
-                    <li class="col-xs-3"><img src="/assets/img/{{ability.img}}.png"/></li>
-                    <li class="col-xs-3">{{ability.name}}</li>
-                    <li class="col-xs-6">
-                      <div class="progress">
-                        <div class="progress-bar" style="width: {{ability.progress}}%"></div>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              {% endfor %}
-            </ul>
+            <p>Passionate about new technologies, I had several times the opportunity to work in the world of startups, mostly at Euratechnologies, Lille.</p>
+            <p>I have focused my specialization on development with Ruby on Rails framework which I use since 4 years.</p>
+            <p>More recently, I had the opportunity to gain experience on the server aspect of my job (Docker, Capistrano, Nginx), and tries to gain skills with front frameworks such as Angular, Backbone, Polymer and Meteor.</p>
+            <p>Eager for new experiences and willing to value my skills, I'll now offer my services as a freelance to help you with your projects.</p>
           </div>
-        {% endfor %}
-
-        <div class="col-xs-6 col-xs-offset-3">
-          <hr/>
         </div>
 
-      </div>
+        <div class="row">
+          <div class="col-xs-6 col-xs-offset-3">
+            <hr/>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="abilities">
+
+        <div class="row">
+          <div class="col-xs-12">
+            <h1><i class="fa fa-angle-right"></i>Abilities</h1>
+
+            <div class="row">
+              {% for category in site.data.abilities %}
+                <div class="abilities-category col-xs-12 col-sm-4">
+                  <h2>{{category.name}}</h2>
+                  <ul class="abilities-list list-unstyled">
+                    {% for ability in category.abilities %}
+                      <li class="ability-item">
+                        <ul class="list-inline">
+                          <li class="col-xs-3 col-sm-4"><img src="/assets/img/{{ability.img}}.png"/></li>
+                          <li class="col-xs-3 col-sm-4">{{ability.name}}</li>
+                          <li class="col-xs-6 col-sm-4">
+                            <div class="progress">
+                              <div class="progress-bar" style="width: {{ability.progress}}%"></div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-6 col-xs-offset-3">
+            <hr/>
+          </div>
+        </div>
+
+      </section>
 
     </div>
 
-  </section>
+  </div>
 </section>
