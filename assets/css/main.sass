@@ -6,7 +6,8 @@
 $white: #FFF
 
 $text-color: #333
-$text-color-light: #888
+$text-color-light: #666
+$text-color-lighter: #888
 
 $gradient-color-start: #367df8
 $gradient-color-end: #3370C6
@@ -23,7 +24,26 @@ $screen-lg-min: 1200px
 @import fontfaces
 @import header
 @import hero
+@import intro
 
 body
+  font-size: 14px
   font-family: 'OpenSansRegular'
   color: $text-color
+
+h1
+  color: $text-color
+  text-transform: uppercase
+  font-family: RalewayLight
+  font-size: 20px
+
+#main
+
+  margin: 15px
+
+  h1
+    font-size: 16px
+    margin-bottom: 25px
+
+    i
+      margin-right: 10px
