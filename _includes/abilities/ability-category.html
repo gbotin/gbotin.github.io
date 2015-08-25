@@ -1,0 +1,8 @@
+<div class="abilities-category col-xs-12 col-sm-4">
+  <h2>{{category.name}}</h2>
+  <ul class="abilities-list list-unstyled">
+    {% for ability in category.abilities %}
+      {% include abilities/ability.html %}
+    {% endfor %}
+  </ul>
+</div>

@@ -54,14 +54,12 @@ module.exports = (grunt) ->
         livereload: true
       source:
         files: [
-          "_includes/**/*"
           "_data/**/*"
+          "_includes/**/*"
           "_layouts/**/*"
+          "_posts/**/*"
           "_sass/**/*"
           "assets/**/*"
-          "css/**/*"
-          "js/**/*"
-          "_config.yml"
           "*.html"
           "*.md"
         ]
@@ -77,8 +75,8 @@ module.exports = (grunt) ->
           livereload: true
 
   grunt.registerTask "build", [
-    "exec:jekyll:build"
     "copy"
+    "exec:jekyll:build"
   ]
 
   grunt.registerTask "serve", [

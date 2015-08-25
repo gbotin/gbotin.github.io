@@ -26,7 +26,7 @@ host: localhost
 
 sass:
   sass_dir: _sass
-  # style: :compressed
+  style: :compressed
 
 exclude:
   - "bower_components"
@@ -34,6 +34,7 @@ exclude:
   - "node_modules"
   - "package.json"
   - "Gruntfile.coffee"
+  - "npm-debug.log"
 
 include:
   - .nojekyll
