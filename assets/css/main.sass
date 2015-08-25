@@ -8,6 +8,7 @@ $white: #FFF
 $text-color: #333
 $text-color-light: #666
 $text-color-lighter: #888
+$text-color-lightest: #a6a6a6
 
 $border-color: #eee
 
@@ -28,7 +29,9 @@ $screen-lg-min: 1200px
 @import hero
 @import intro
 @import abilities
+@import experiences
 
+// 0.85em
 // 1.15em
 // 1.25em
 // 1.45em
@@ -36,7 +39,7 @@ $screen-lg-min: 1200px
 
 body
   font-size: 14px
-  font-family: 'OpenSansRegular'
+  font-family: OpenSansRegular
   color: $text-color
 
 h1
@@ -53,9 +56,25 @@ h2
   font-family: RalewayLight
   font-size: 1em
 
+h3
+  color: $text-color
+  font-family: OpenSansRegular
+  font-size: 1.35em
+  margin: 0 0 15px
+
+  small
+    display: block
+    margin: 5px 0
+
 h1, h2, h3
   i
     margin-right: 10px
 
   & ~ hr
     margin: 10px 0
+
+footer
+  margin-bottom: 15px
+  text-align: center
+  color: $text-color-lightest
+  font-size: 0.85em

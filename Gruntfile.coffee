@@ -66,7 +66,7 @@ module.exports = (grunt) ->
           "*.md"
         ]
         tasks: [
-          "exec:jekyll"
+          "exec:jekyll:build"
         ]
 
     connect:
@@ -77,12 +77,12 @@ module.exports = (grunt) ->
           livereload: true
 
   grunt.registerTask "build", [
+    "exec:jekyll:build"
     "copy"
   ]
 
   grunt.registerTask "serve", [
     "build"
-    "exec:jekyll:serve"
     "connect:server"
     "watch"
   ]
