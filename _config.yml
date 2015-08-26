@@ -24,6 +24,10 @@ timezone: Europe/Paris
 port: 3000
 host: localhost
 
+collections:
+  - portfolio
+  - experiences
+
 sass:
   sass_dir: _sass
   style: :compressed

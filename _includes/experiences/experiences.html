@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-xs-12">
-    <h1><i class="fa fa-angle-right"></i>Experiences</h1>
+    <h1><i class="fa fa-angle-right"></i>Work experience</h1>
     <div class="experiences-list">
-      {% for company in site.data.experiences %}
+      {% for experience in site.experiences reversed %}
         {% include experiences/experience.html %}
       {% endfor %}
     </div>
