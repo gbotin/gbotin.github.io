@@ -39,6 +39,3 @@ exclude:
   - package.json
   - Gruntfile.coffee
   - npm-debug.log
-
-# include:
-#   - .nojekyll
