@@ -40,5 +40,5 @@ exclude:
   - Gruntfile.coffee
   - npm-debug.log
 
-include:
-  - .nojekyll
+# include:
+#   - .nojekyll
