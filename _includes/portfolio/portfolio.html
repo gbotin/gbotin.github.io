@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-xs-12">
     <h1><i class="fa fa-angle-right"></i>Portfolio</h1>
-    <div class="portfolio-list">
+    <div class="portfolio-list row">
       {% for item in site.portfolio reversed %}
         {% include portfolio/item.html %}
       {% endfor %}

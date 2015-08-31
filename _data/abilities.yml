@@ -1,77 +1,123 @@
 - name: Front-End
   abilities:
-  - name: Bower
-    img: bower
+  - name: HTML 5
+    img: html
+    progress: 95
+
+  - name: HAML
+    img: haml
+    progress: 95
+
+  - name: CSS 3
+    img: css
+    progress: 85
+
+  - name: Bootstrap 3
+    img: bootstrap
     progress: 40
+
+  - name: Sass
+    img: sass
+    progress: 90
+
+  - name: Less
+    img: less
+    progress: 80
+
+  - name: JQuery
+    img: jquery
+    progress: 90
+
+  - name: Backbone
+    img: backbone
+    progress: 70
+
+  - name: Angular
+    img: angular
+    progress: 100
+    learning: true
+
+  - name: CoffeeScript
+    img: coffeescript
+    progress: 90
+
+  - name: Grunt
+    img: grunt
+    progress: 75
 
   - name: Bower
     img: bower
-    progress: 40
-
-  - name: Bower
-    img: bower
-    progress: 40
-
-  - name: Bower
-    img: bower
-    progress: 40
-
-  - name: Bower
-    img: bower
-    progress: 40
-
-  - name: Bower
-    img: bower
-    progress: 40
+    progress: 80
 
 - name: Back-End
   abilities:
-  - name: Bower
-    img: bower
-    progress: 40
+  - name: Ruby
+    img: ruby
+    progress: 85
 
-  - name: Bower
-    img: bower
-    progress: 40
+  - name: Rails
+    img: rails
+    progress: 90
 
-  - name: Bower
-    img: bower
-    progress: 40
+  - name: NodeJS
+    img: node
+    progress: 60
 
-  - name: Bower
-    img: bower
-    progress: 40
+  - name: Express
+    img: express
+    progress: 50
 
-  - name: Bower
-    img: bower
-    progress: 40
+  - name: PostgreSQL
+    img: postgres
+    progress: 80
 
-  - name: Bower
-    img: bower
-    progress: 40
+  - name: MySQL
+    img: mysql
+    progress: 70
+
+  - name: Meteor
+    img: meteor
+    progress: 100
+    learning: true
+
+  - name: Elixir
+    img: elixir
+    progress: 100
+    learning: true
+
+  - name: Phoenix
+    img: phoenix
+    progress: 100
+    learning: true
 
 - name: Ops
   abilities:
-  - name: Bower
-    img: bower
-    progress: 40
+  - name: Capistrano
+    img: capistrano
+    progress: 90
 
-  - name: Bower
-    img: bower
-    progress: 40
+  - name: Heroku
+    img: heroku
+    progress: 90
 
-  - name: Bower
-    img: bower
-    progress: 40
+  - name: nginx
+    img: nginx
+    progress: 70
 
-  - name: Bower
-    img: bower
-    progress: 40
+  - name: AWS
+    img: aws
+    progress: 60
 
-  - name: Bower
-    img: bower
-    progress: 40
+  - name: Apache
+    img: apache
+    progress: 50
 
-  - name: Bower
-    img: bower
-    progress: 40
+  - name: Docker
+    img: docker
+    progress: 100
+    learning: true
+
+  - name: Vagrant
+    img: vagrant
+    progress: 100
+    learning: true

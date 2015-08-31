@@ -3,6 +3,8 @@
 
 $ ->
 
+  $('[data-toggle="tooltip"]').tooltip()
+
   $popovers = $('[data-toggle="popover"]')
   $popovers.popover()
 
@@ -41,3 +43,7 @@ $ ->
 
       client.on 'aftercopy', (event) ->
         $copy.attr('title', 'Copy to clipboard').tooltip('fixTitle')
+
+
+  $('.ability-item .logo').on 'click', (e) ->
+    e.preventDefault()
