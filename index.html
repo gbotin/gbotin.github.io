@@ -12,21 +12,23 @@ layout: default
 <main id="main" class="container">
   <div class="row">
     <div class="col-md-offset-1 col-md-10 col-sm-12">
-      <section id="intro">
+      <section id="intro" class="content-block">
         {% include about.html %}
       </section>
 
-      <section id="abilities">
+      <section id="abilities" class="content-block">
         {% include abilities/abilities.html %}
       </section>
 
-      <section id="experiences">
+      <section id="experiences" class="content-block">
         {% include experiences/experiences.html %}
       </section>
 
-      <section id="portfolio">
-        {% include portfolio/portfolio.html %}
-      </section>
+      <!--
+        <section id="portfolio">
+          {% include portfolio/portfolio.html %}
+        </section>
+      -->
     </div>
   </div>
 </main>

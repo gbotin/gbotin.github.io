@@ -1,14 +1,14 @@
 # Site settings
-title: Geoffrey Botin - Ruby on Rails developer / DevOps
+title: Geoffrey Botin - Fullstack web developer
 email: geoffrey.botin@gmail.com
 
 description: >
   Passionate about new technologies, Ruby on Rails developer since 5 years,
   I had several times the opportunity to work in the world of startups.
   Eager for new experiences and willing to value my skills,
-  I now offer my services as a freelance to help you with your projects.
+  I'd like to help you build your things.
 
-url: "http://gbotin.github.io"
+url: http://gbotin.github.io
 
 twitter_username: geoffrey_botin
 github_username:  gbotin
@@ -33,12 +33,12 @@ sass:
   style: :compressed
 
 exclude:
-  - "bower_components"
-  - "bower.json"
-  - "node_modules"
-  - "package.json"
-  - "Gruntfile.coffee"
-  - "npm-debug.log"
+  - bower_components
+  - bower.json
+  - node_modules
+  - package.json
+  - Gruntfile.coffee
+  - npm-debug.log
 
 include:
   - .nojekyll
