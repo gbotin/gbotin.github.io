@@ -2,11 +2,11 @@
   abilities:
   - name: HTML 5
     img: html
-    progress: 95
+    progress: 90
 
   - name: HAML
     img: haml
-    progress: 95
+    progress: 90
 
   - name: CSS 3
     img: css
@@ -14,7 +14,7 @@
 
   - name: Bootstrap 3
     img: bootstrap
-    progress: 40
+    progress: 80
 
   - name: Sass
     img: sass
@@ -24,6 +24,10 @@
     img: less
     progress: 80
 
+  - name: JavaScript
+    img: javascript
+    progress: 90
+
   - name: JQuery
     img: jquery
     progress: 90
@@ -31,11 +35,6 @@
   - name: Backbone
     img: backbone
     progress: 70
-
-  - name: Angular
-    img: angular
-    progress: 100
-    learning: true
 
   - name: CoffeeScript
     img: coffeescript
@@ -45,9 +44,15 @@
     img: grunt
     progress: 75
 
-  - name: Bower
-    img: bower
-    progress: 80
+  - name: Gulp
+    img: gulp
+    progress: 100
+    learning: true
+
+  - name: Angular
+    img: angular
+    progress: 100
+    learning: true
 
 - name: Back-End
   abilities:
