@@ -40,12 +40,16 @@
     img: coffeescript
     progress: 90
 
+  - name: Gulp
+    img: gulp
+    progress: 80
+
   - name: Grunt
     img: grunt
     progress: 75
 
-  - name: Gulp
-    img: gulp
+  - name: Foundation
+    img: foundation
     progress: 100
     learning: true
 

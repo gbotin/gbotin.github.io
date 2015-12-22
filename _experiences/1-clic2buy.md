@@ -8,8 +8,8 @@ end_date: 01/2015
 
 Development of a large API oriented infrastructure in a team of 5 engineers.
 
-Backend development with Ruby on Rails
-Frontend experience with jQuery, Angular, Backbone
+Backend development with Ruby on Rails  
+Frontend experience with jQuery, Angular, Backbone  
 Integration (Sass, Photoshop)
 
 TDD (Rspec, Cucumber, Capybara, PhantomJS, Jasmine)

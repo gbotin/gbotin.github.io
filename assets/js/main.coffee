@@ -47,3 +47,8 @@ $ ->
 
   $('.ability-item .logo').on 'click', (e) ->
     e.preventDefault()
+
+  $('#portfolio-gallery').on 'show.bs.modal', (event) ->
+    $button = $(event.relatedTarget)
+    # $(this).find('.expanded').attr('src', $button.data('image'))
+    $(this).find('.expanded').attr('title', $button.data('title'))

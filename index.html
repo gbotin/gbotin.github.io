@@ -20,15 +20,15 @@ layout: default
         {% include abilities/abilities.html %}
       </section>
 
+      <section id="portfolio">
+        {% include portfolio/portfolio.html %}
+      </section>
+
       <section id="experiences" class="content-block">
         {% include experiences/experiences.html %}
       </section>
-
-      <!--
-        <section id="portfolio">
-          {% include portfolio/portfolio.html %}
-        </section>
-      -->
     </div>
   </div>
 </main>
+
+{% include portfolio/modal.html %}
