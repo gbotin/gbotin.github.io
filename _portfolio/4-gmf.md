@@ -2,7 +2,8 @@
 name: GMF
 start_date: October 2015
 techs: Backbone, JS Vanilla, CSS3, Bootstrap 3, Gulp, Sass
-image: neoweb.jpg
+image_small: gmf.jpg
+image_large: gmf.jpg
 ---
 
 Development and integration of a Backbone app on a Symfony code base.  

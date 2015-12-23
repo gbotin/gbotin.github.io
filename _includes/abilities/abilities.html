@@ -1,12 +1,16 @@
 <div class="row">
   <div class="col-xs-12">
     <h1><i class="fa fa-angle-right"></i>Skills</h1>
-    <div class="row">
-      {% for category in site.data.abilities %}
-        {% include abilities/ability-category.html %}
-      {% endfor %}
-    </div>
   </div>
 
-  {% include break.html %}
+  <div class="content-inner">
+    <div class="col-xs-12">
+      <div class="row">
+        {% for category in site.data.abilities %}
+          {% include abilities/ability-category.html %}
+        {% endfor %}
+      </div>
+    </div>
+    {% include break.html %}
+  </div>
 </div>

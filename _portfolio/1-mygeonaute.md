@@ -3,7 +3,8 @@ name: MyGeonaute
 start_date: July 2015
 website: http://www.mygeonaute.com
 techs: Backbone, jQuery, jqPlot, CSS3, Bootstrap 3
-image: neoweb.jpg
+image_small: mygeonaute.jpg
+image_large: mygeonaute.jpg
 ---
 
 Development of a Backbone application in order to display user weight stats.  
