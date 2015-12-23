@@ -1,0 +1,33 @@
+#affix-header
+  background: $white
+  opacity: 0
+  transition: opacity ease-in 0.15s
+  min-height: auto
+
+  &.affix
+    opacity: 1
+    top: 0
+    left: 0
+    right: 0
+
+  .navbar-center
+    float: none
+    text-align: center
+
+    & > li
+      display: inline-block
+      float: none
+      font-family: RalewayLight
+      text-transform: uppercase
+
+      a
+        padding-bottom: 4px
+        padding-top: 8px
+        border-bottom: solid 2px transparent
+
+      &.active a
+        background: $white
+        border-bottom: solid 2px $border-color
+
+      &:first-child a
+        padding-left: 0
