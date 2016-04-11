@@ -24,7 +24,7 @@ timezone: Europe/Paris
 port: 3000
 host: localhost
 
-source:       ./src
+source: ./src
 
 collections:
   - portfolio
