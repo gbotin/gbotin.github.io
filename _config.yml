@@ -25,9 +25,6 @@ port: 3000
 host: localhost
 
 source:       ./src
-layouts_dir:  ./_layouts
-data_dir:     ./_data
-includes_dir: ./_includes
 
 collections:
   - portfolio
