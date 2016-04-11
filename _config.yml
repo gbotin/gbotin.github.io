@@ -24,21 +24,14 @@ timezone: Europe/Paris
 port: 3000
 host: localhost
 
+source:       ./src
+layouts_dir:  ./_layouts
+data_dir:     ./_data
+includes_dir: ./_includes
+
 collections:
   - portfolio
   - experiences
 
-sass:
-  sass_dir: _sass
-  style: :compressed
-
-gems:
- - jekyll-coffeescript
-
 exclude:
-  - bower_components
-  - bower.json
-  - node_modules
-  - package.json
-  - Gruntfile.coffee
-  - npm-debug.log
+  - assets/dev

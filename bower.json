@@ -15,8 +15,10 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.2",
     "components-font-awesome": "4.4.0",
-    "zeroclipboard": "2.2.0"
+    "zeroclipboard": "2.2.0",
+    "bootstrap-sass": "^3.3.6",
+    "jquery": "^2.2.3",
+    "font-awesome": "^4.5.0"
   }
 }

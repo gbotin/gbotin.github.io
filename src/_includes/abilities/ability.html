@@ -1,0 +1,18 @@
+<li class="ability-item">
+  <ul class="list-inline">
+    <li class="logo col-xs-4 col-sm-6 col-lg-4">
+      <a href="#" data-toggle="tooltip" title="{{ability.name}}" data-placement="top" data-trigger="hover">
+        <img src="/assets/dist/img/skills/{{ability.img}}.jpg" alt="{{ability.name}}" />
+      </a>
+    </li>
+    <li class="col-xs-8 col-sm-6 col-lg-8">
+      <div class="progress">
+        {% if ability.learning %}
+          <div class="learning progress-bar progress-bar-striped active" style="width: {{ability.progress}}%">learning</div>
+        {% else %}
+          <div class="progress-bar" style="width: {{ability.progress}}%"></div>
+        {% endif %}
+      </div>
+    </li>
+  </ul>
+</li>

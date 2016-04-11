@@ -1,6 +1,5 @@
-.sass-cache
-
-_site
-
+_site/
+src/assets/dist/
+src/.jekyll-metadata
 node_modules/
 bower_components/

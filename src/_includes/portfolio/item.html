@@ -1,0 +1,44 @@
+<article class="portfolio-item col-xs-12">
+
+  <div class="row">
+
+    <div class="preview col-xs-12 col-sm-3">
+      <div class="wrapper">
+        <img src="/assets/dist/img/portfolio/{{item.image_small}}" alt="{{item.name}}"/>
+
+        <a href="#" class="expand hidden-xs" data-toggle="modal" data-target="#portfolio-gallery" data-image="/assets/dist/img/portfolio/large/{{item.image_large}}" data-title="{{item.name}}">
+          <i class="fa fa-external-link" title="Expand" data-toggle="tooltip" data-trigger="hover" data-placement="top"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="specs col-xs-12 col-sm-9">
+      <h3>{{item.name}}</h3>
+
+      <dl class="dl-horizontal">
+
+        {% if item.website %}
+          <dt><i class="fa fa-link"></i></dt>
+          <dd><a href="{{item.website}}" target="_blank">{{item.website}}</a></dd>
+        {% endif %}
+
+        <dt><i class="fa fa-calendar"></i></dt>
+        <dd>{{item.start_date}}</dd>
+
+        <dt><i class="fa fa-cogs"></i></dt>
+        <dd>{{item.techs}}</dd>
+
+        <dt class="details"><i class="fa fa-quote-left"></i></dt>
+        <dd class="details">{{item.content}}</dd>
+      </dl>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-5">
+      <div class="border"></div>
+    </div>
+  </div>
+
+</article>

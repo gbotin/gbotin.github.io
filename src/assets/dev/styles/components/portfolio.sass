@@ -1,0 +1,112 @@
+.portfolio-item
+  margin-bottom: 20px
+
+  &:not(:last-child)
+    .border
+      border-bottom: solid 1px $border-color
+      margin-top: 20px
+
+  h3
+    text-align: center
+
+  .preview
+    text-align: center
+
+  .wrapper
+    display: inline-block
+    position: relative
+
+    img
+      border: solid 1px $border-color
+      display: inline-block
+      margin: auto
+      max-width: 100%
+
+    .expand
+      background: $border-color
+      border-bottom-left-radius: 3px
+      color: $text-color-lighter
+      display: inline-block
+      height: 20px
+      opacity: 0
+      position: absolute
+      right: 0
+      text-align: center
+      top: 0
+      transition: opacity ease-in .1s
+      width: 20px
+
+      &:focus,
+      &:hover,
+      &:active
+        outline: none
+
+    &:hover
+      .expand
+        opacity: 1
+
+  .specs
+    margin-top: 20px
+
+    .dl-horizontal
+
+      dt
+        clear: left
+        float: left
+        overflow: hidden
+        text-align: left
+        text-overflow: ellipsis
+        white-space: nowrap
+        width: 30px
+
+      dd
+        margin-left: 30px
+
+      .details
+        margin-top: 10px
+
+  @media (min-width: $screen-sm-min)
+    h3
+      text-align: left
+
+    .specs
+      margin-top: 0
+
+      p
+        margin: 0
+
+.portfolio-gallery
+  padding-left: 30px
+  padding-right: 30px
+  text-align: center
+
+  .modal-dialog
+    display: inline-block
+    width: auto
+
+  .modal-body
+    border-radius: inherit
+    padding: 0
+
+  .expanded
+    border-radius: inherit
+    max-width: 100%
+
+  .close
+    background: $white
+    border-bottom-left-radius: 3px
+    border-top-right-radius: inherit
+    color: $text-color-lighter
+    display: inline-block
+    font-size: 14px
+    height: 25px
+    position: absolute
+    right: 0
+    text-align: center
+    top: 0
+    width: 25px
+
+    &:focus,
+    &:active,
+    &:hover
+      outline: none
