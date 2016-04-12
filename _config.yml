@@ -24,14 +24,17 @@ timezone: Europe/Paris
 port: 3000
 host: localhost
 
-source:       ./src
-layouts_dir:  ./_layouts
-data_dir:     ./_data
-includes_dir: ./_includes
-
 collections:
   - portfolio
   - experiences
 
 exclude:
   - assets/dev
+  - bower_components
+  - node_modules
+  - bower.json
+  - gulp.config.js
+  - Gulpfile.js
+  - Readme.md
+  - package.json
+  - npm-debug.log

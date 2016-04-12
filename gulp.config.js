@@ -1,5 +1,5 @@
-var dest = "./src/assets/dist";
-var src = "./src/assets/dev";
+var dest = "./assets/dist";
+var src = "./assets/dev";
 var serve = './_site';
 
 module.exports = {
@@ -8,8 +8,8 @@ module.exports = {
   port: 3000,
 
   watch: [
-    "./src/**/*.{html,md,yml}",
-    "./src/assets/dist/**/*"
+    "./**/*.{html,md,yml}",
+    "./assets/dist/**/*"
   ],
   src: src,
   dest: dest,

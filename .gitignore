@@ -1,5 +1,5 @@
 _site/
-src/assets/dist/
-src/.jekyll-metadata
+assets/dist/
+.jekyll-metadata
 node_modules/
 bower_components/
